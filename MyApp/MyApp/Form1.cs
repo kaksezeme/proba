@@ -16,5 +16,12 @@ namespace MyApp
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Random rand = new Random();
+
+            label1.Text = rand.Next(1, 10).ToString();
+        }
     }
 }
